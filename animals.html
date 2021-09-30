@@ -166,18 +166,22 @@
         </div>
     
         <br>
-    
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <div class="btn-group" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <li><a class="dropdown-item" href="Plane.html">Link to Plane page</a></li>
-                <li><a class="dropdown-item" href="train.html">Link to Train page</a></li>
-              </ul>
+        
+          <form>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">never share your email with anyone else.</div>
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="inputAnimal" class="form-label">Animal</label>
+              <input type="text" class="form-control" id="inputAnimal" placeholder="Enter your animal" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="newsletterCheck">
+              <label class="form-check-label" for="newsletterCheck">Sign up for newsletter?</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form><br>
     </body>
 </html>
